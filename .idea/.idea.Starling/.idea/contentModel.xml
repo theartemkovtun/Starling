@@ -7,7 +7,301 @@
     <e p="C:\Users\akvtn\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\akvtn\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Starling.161620154.00" t="ExcludeRecursive" />
     <e p="D:\Codes\Starling" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Starling.Aes" t="IncludeRecursive">
+        <e p="AesEncryptor.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IAesEncryptor.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="DecryptionResponse.cs" t="Include" />
+          <e p="EncryptionResponse.cs" t="Include" />
+          <e p="KeyInfo.cs" t="Include" />
+          <e p="Status.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.Aes.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Starling.Aes.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Starling.Application" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Contracts" t="Include">
+          <e p="IAuthorizationOptions.cs" t="Include" />
+        </e>
+        <e p="Dtos" t="Include">
+          <e p="FileDataDto.cs" t="Include" />
+          <e p="FileDto.cs" t="Include" />
+          <e p="FilesSearchResult.cs" t="Include" />
+          <e p="ShareDto.cs" t="Include" />
+          <e p="ShareFileSigningDto.cs" t="Include" />
+          <e p="ShareForUserDto.cs" t="Include" />
+          <e p="ShareSearchResult.cs" t="Include" />
+          <e p="ShareUserInfoDto.cs" t="Include" />
+          <e p="SignaturesVerificationResponseDto.cs" t="Include" />
+          <e p="TokenDto.cs" t="Include" />
+          <e p="UserSearchDto.cs" t="Include" />
+        </e>
+        <e p="Mappings" t="Include">
+          <e p="Profiles" t="Include">
+            <e p="FileProfile.cs" t="Include" />
+            <e p="ShareProfile.cs" t="Include" />
+            <e p="UserProfile.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Requests" t="Include">
+          <e p="Files" t="Include">
+            <e p="Commands" t="Include">
+              <e p="AddFile" t="Include">
+                <e p="AddFileCommand.cs" t="Include" />
+                <e p="AddFileCommandHandler.cs" t="Include" />
+              </e>
+              <e p="UpdateFile" t="Include">
+                <e p="UpdateFileCommand.cs" t="Include" />
+                <e p="UpdateFileCommandHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Queries" t="Include">
+              <e p="GetFile" t="Include">
+                <e p="GetFileQuery.cs" t="Include" />
+                <e p="GetFileQueryHandler.cs" t="Include" />
+              </e>
+              <e p="GetFileContent" t="Include">
+                <e p="GetFileContentQuery.cs" t="Include" />
+                <e p="GetFileContentQueryHandler.cs" t="Include" />
+              </e>
+              <e p="GetFiles" t="Include">
+                <e p="GetFilesQuery.cs" t="Include" />
+                <e p="GetFilesQueryHandler.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Shares" t="Include">
+            <e p="Commands" t="Include">
+              <e p="AcceptShare" t="Include">
+                <e p="AcceptShareCommand.cs" t="Include" />
+                <e p="AcceptShareCommandHandler.cs" t="Include" />
+              </e>
+              <e p="AddShare" t="Include">
+                <e p="AddShareCommand.cs" t="Include" />
+                <e p="AddShareCommandHandler.cs" t="Include" />
+              </e>
+              <e p="DeleteShare" t="Include">
+                <e p="DeleteShareCommand.cs" t="Include" />
+                <e p="DeleteShareCommandHandler.cs" t="Include" />
+              </e>
+              <e p="RejectShare" t="Include">
+                <e p="RejectShareCommand.cs" t="Include" />
+                <e p="RejectShareCommandHandler.cs" t="Include" />
+              </e>
+              <e p="SignShareFile" t="Include">
+                <e p="SignShareFileCommand.cs" t="Include" />
+                <e p="SignShareFileCommandHandler.cs" t="Include" />
+              </e>
+              <e p="VerifySignatures" t="Include">
+                <e p="VerifySignaturesCommand.cs" t="Include" />
+                <e p="VerifySignaturesCommandHandler.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Queries" t="Include">
+              <e p="GetShare" t="Include">
+                <e p="GetShareQuery.cs" t="Include" />
+                <e p="GetShareQueryHandler.cs" t="Include" />
+              </e>
+              <e p="GetShares" t="Include">
+                <e p="GetSharesQuery.cs" t="Include" />
+                <e p="GetSharesQueryHandler.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Users" t="Include">
+            <e p="Commands" t="Include">
+              <e p="AuthorizeUser" t="Include">
+                <e p="AuthorizeUserCommand.cs" t="Include" />
+                <e p="AuthorizeUserCommandHandler.cs" t="Include" />
+                <e p="AuthorizeUserCommandValidator.cs" t="Include" />
+              </e>
+              <e p="LogoutUser" t="Include">
+                <e p="LogoutUserCommand.cs" t="Include" />
+                <e p="LogoutUserCommandHandler.cs" t="Include" />
+              </e>
+              <e p="RefreshAuthorizationToken" t="Include">
+                <e p="RefreshAuthorizationTokenCommand.cs" t="Include" />
+                <e p="RefreshAuthorizationTokenCommandHandler.cs" t="Include" />
+              </e>
+              <e p="RegisterUser" t="Include">
+                <e p="RegisterUserCommand.cs" t="Include" />
+                <e p="RegisterUserCommandHandler.cs" t="Include" />
+                <e p="RegisterUserCommandValidator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Queries" t="Include">
+              <e p="SearchForUsers" t="Include">
+                <e p="SearchForUsersQuery.cs" t="Include" />
+                <e p="SearchForUsersQueryHandler.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Starling.Application.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Starling.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="SharesFilterStatus.cs" t="Include" />
+          <e p="ShareStatus.cs" t="Include" />
+          <e p="ShareUserOwnershipStatus.cs" t="Include" />
+          <e p="UserFileStatus.cs" t="Include" />
+          <e p="UserShareStatus.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="File.cs" t="Include" />
+          <e p="FileWithTotal.cs" t="Include" />
+          <e p="Filters" t="Include">
+            <e p="GetFilesFilter.cs" t="Include" />
+            <e p="GetSharesFilter.cs" t="Include" />
+          </e>
+          <e p="Share.cs" t="Include" />
+          <e p="ShareFile.cs" t="Include" />
+          <e p="ShareFileSigning.cs" t="Include" />
+          <e p="ShareForUser.cs" t="Include" />
+          <e p="ShareUserInfo.cs" t="Include" />
+          <e p="ShareWithTotal.cs" t="Include" />
+          <e p="SignatureVerification.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="Contracts" t="Include">
+            <e p="IFileRepository.cs" t="Include" />
+            <e p="IShareRepository.cs" t="Include" />
+            <e p="IUserRepository.cs" t="Include" />
+          </e>
+          <e p="FileRepository.cs" t="Include" />
+          <e p="Repository.cs" t="Include" />
+          <e p="ShareRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+        <e p="Starling.Domain.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Starling.Ecdsa" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Ecdsa.cs" t="Include" />
+        <e p="Enums" t="Include">
+          <e p="Status.cs" t="Include" />
+        </e>
+        <e p="IEcdsa.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="EcdsaKeys.cs" t="Include" />
+          <e p="SignResponse.cs" t="Include" />
+          <e p="VerificationResponse.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.Ecdsa.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Starling.Ecdsa.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Starling.Infrastructure" t="Include" />
+      <e p="Starling.Shared" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="extensions" t="Include">
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
+        <e p="Layout" t="Include">
+          <e p="Database" t="Include">
+            <e p="Functions.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.Shared.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Starling.Shared.csproj" t="IncludeRecursive" />
+        <e p="Utilities" t="Include">
+          <e p="StringUtility.cs" t="Include" />
+        </e>
+      </e>
       <e p="Starling.sln" t="IncludeFlat" />
+      <e p="Starling.WebApi" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="FileController.cs" t="Include" />
+          <e p="MediatorController.cs" t="Include" />
+          <e p="ShareController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="Mappings" t="Include">
+          <e p="Converters" t="Include">
+            <e p="FileConverter.cs" t="Include" />
+            <e p="FilesConverter.cs" t="Include" />
+          </e>
+          <e p="Profiles" t="Include">
+            <e p="FileProfile.cs" t="Include" />
+            <e p="ShareProfile.cs" t="Include" />
+            <e p="UserProfile.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Middlewares" t="Include">
+          <e p="CorsMiddleware.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Files" t="Include">
+            <e p="GetFilesRequestViewModel.cs" t="Include" />
+            <e p="UpdateFileRequestViewModel.cs" t="Include" />
+          </e>
+          <e p="Shares" t="Include">
+            <e p="AddShareRequestViewModel.cs" t="Include" />
+            <e p="GetSharesRequestViewModel.cs" t="Include" />
+            <e p="SignShareFileRequestViewModel.cs" t="Include" />
+          </e>
+          <e p="Users" t="Include">
+            <e p="LogoutUserRequestViewModel.cs" t="Include" />
+            <e p="SearchForUsersRequestViewModel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Starling.WebApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="configuration.json" t="Include" />
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Starling.WebApi.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="AuthorizationOptions.cs" t="Include" />
+        </e>
+      </e>
     </e>
   </component>
 </project>

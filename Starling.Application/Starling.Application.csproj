@@ -1,8 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Starling.Aes\Starling.Aes.csproj" />
+      <ProjectReference Include="..\Starling.Domain\Starling.Domain.csproj" />
+      <ProjectReference Include="..\Starling.Ecdsa\Starling.Ecdsa.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="9.0.0" />
+      <PackageReference Include="FluentValidation" Version="9.0.0-preview3" />
+      <PackageReference Include="MediatR" Version="8.0.1" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0" />
+    </ItemGroup>
 
 </Project>

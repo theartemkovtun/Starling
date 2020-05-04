@@ -2,11 +2,11 @@
 using MediatR;
 using Starling.Application.DTOs;
 
-namespace Starling.Application.Requests.Documents.Queries.GetDocument
+namespace Starling.Application.Requests.Files.Queries.GetFile
 {
-    public class GetDocumentQuery : IRequest<DocumentDto>
+    public class GetFileQuery : IRequest<FileDto>
     {
-        public GetDocumentQuery(Guid id)
+        public GetFileQuery(Guid id)
         {
             Id = id;
         }

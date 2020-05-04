@@ -2,25 +2,28 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
-using Starling.Application.Contracts.Repositories;
-using Starling.Application.Requests.Files.Commands.AddFile;
+using Starling.Domain.Enums;
+using Starling.Domain.Repositories.Contracts;
 
-namespace Starling.Application.Requests.Documents.Commands.AddDocument
+namespace Starling.Application.Requests.Files.Commands.AddFile
 {
-    public class AddDocumentCommandHandler : IRequestHandler<AddFileCommand>
+    public class AddFileCommandHandler : IRequestHandler<AddFileCommand>
     {
         private readonly IFileRepository _fileRepository;
-        private readonly IMapper _mapper;
-        
-        public AddDocumentCommandHandler(IFileRepository fileRepository, IMapper mapper)
+        private readonly IUserRepository _userRepository;
+
+        public AddFileCommandHandler(IFileRepository fileRepository, IUserRepository userRepository)
         {
             _fileRepository = fileRepository;
-            _mapper = mapper;
+            _userRepository = userRepository;
         }
         
         public async Task<Unit> Handle(AddFileCommand request, CancellationToken cancellationToken)
         {
-            await _fileRepository.AddAsync(request.Filename, request.Content.ToArray(), cancellationToken);
+            var fileId = await _fileRepository.AddAsync(request.Filename, request.Content.ToArray(), cancellationToken);
+            request.FileId = fileId;
+
+            await _userRepository.AssignFileAsync(request.Username, request.FileId, UserFileStatus.Owner, cancellationToken);
             
             return Unit.Value;
         }

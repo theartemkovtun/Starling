@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
+using Starling.Domain.Enums;
 
 namespace Starling.Application.DTOs
 {
-    public class DocumentDto
+    public class FileDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Guid? CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public byte[] Content { get; set; }
+        public UserFileStatus OwnershipStatus { get; set; }
+        public Guid ShareId { get; set; }
     }
 }

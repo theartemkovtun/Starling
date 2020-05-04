@@ -1,3 +1,11 @@
 ﻿{
-  
+  "connectionStrings": {
+    "dev": "Host=localhost;Port=5432;Database=starling;Username=postgres;Password=140599Artem"
+  },
+  "authorizationOptions": {
+    "Issuer": "AuthorizationServer",
+    "Audience": "https://localhost:44320",
+    "Key": "r$bWfFD4MV7FJs_+h_HE*_qvf$9BDLJ?",
+    "Lifetime": "1"
+  }
 }

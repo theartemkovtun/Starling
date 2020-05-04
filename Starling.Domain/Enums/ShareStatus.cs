@@ -2,6 +2,8 @@
 {
     public enum ShareStatus
     {
-        
+        Active = 1,
+        Accepted,
+        Rejected
     }
 }

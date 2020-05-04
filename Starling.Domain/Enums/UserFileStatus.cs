@@ -2,6 +2,7 @@
 {
     public enum UserFileStatus
     {
-        
+        Owner = 1,
+        Receiver
     }
 }
