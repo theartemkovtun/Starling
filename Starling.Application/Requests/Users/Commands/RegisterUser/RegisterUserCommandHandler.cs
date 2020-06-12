@@ -43,7 +43,7 @@ namespace Starling.Application.Requests.Users.Commands.RegisterUser
             {
                 Username = request.Username,
                 Password = request.Password.Sha512(),
-                PublicKey = string.Join(':', keys.PublicKey),
+                PublicKey = keys.PublicKey,
                 PrivateKey = encryptedPrivateKey,
                 PrivateKeyPassword = request.PrivateKeyPassword.Sha512()
             };

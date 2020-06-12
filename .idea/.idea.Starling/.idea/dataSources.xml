@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/starling</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="postgres@starling.cqcyfcy4k8kb.eu-central-1.rds.amazonaws.com" uuid="d15ae4d1-fc75-415d-a83e-a68ba4356222">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://starling.cqcyfcy4k8kb.eu-central-1.rds.amazonaws.com:5432/postgres</jdbc-url>
+    </data-source>
   </component>
 </project>

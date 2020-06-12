@@ -246,6 +246,7 @@
       </e>
       <e p="Starling.sln" t="IncludeFlat" />
       <e p="Starling.WebApi" t="IncludeRecursive">
+        <e p=".dockerignore" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -255,6 +256,7 @@
           <e p="ShareController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="Mappings" t="Include">
           <e p="Converters" t="Include">
             <e p="FileConverter.cs" t="Include" />
@@ -268,6 +270,7 @@
         </e>
         <e p="Middlewares" t="Include">
           <e p="CorsMiddleware.cs" t="Include" />
+          <e p="ExceptionHandlingMiddleware.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Files" t="Include">
@@ -300,6 +303,7 @@
         <e p="Startup.cs" t="Include" />
         <e p="ViewModels" t="Include">
           <e p="AuthorizationOptions.cs" t="Include" />
+          <e p="ErrorViewModel.cs" t="Include" />
         </e>
       </e>
     </e>

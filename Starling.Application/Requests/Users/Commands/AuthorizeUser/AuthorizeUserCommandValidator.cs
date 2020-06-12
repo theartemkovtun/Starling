@@ -17,7 +17,8 @@ namespace Starling.Application.Requests.Users.Commands.AuthorizeUser
                 .NotEmpty().WithMessage("Password cannot be empty");
 
             RuleFor(u => new {u.Username, u.Password})
-                .MustAsync(async (model, _) => await userRepository.IsUserExists(model.Username, model.Password.Sha512()));
+                .MustAsync(async (model, _) => await userRepository.IsUserExists(model.Username, model.Password.Sha512()))
+                .WithMessage("Invalid username or password");
         }
     }
 }

@@ -21,6 +21,7 @@ using Starling.Application.Requests.Users.Commands.RegisterUser;
 using Starling.Domain.Repositories;
 using Starling.Domain.Repositories.Contracts;
 using Starling.Ecdsa;
+using Starling.WebApi.Middlewares;
 using Starling.WebApi.ViewModels;
 
 namespace Starling.WebApi
@@ -112,6 +113,7 @@ namespace Starling.WebApi
                 return next.Invoke();
             });
 
+            app.UseExceptionHandlingMiddlewareMiddleware();
             app.UseMvcWithDefaultRoute();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
